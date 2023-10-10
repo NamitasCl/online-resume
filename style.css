@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: lightgrey;
+}
+
+main {
+    width: max(60vw, 600px);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    padding: 10px 30px;
+    margin-top: 3vh;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.name-title {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.name-title > h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.name-title > h1 span {
+    font-weight: 700;
+}
+
+.name-title > p .labels {
+    color: rgb(156, 156, 156);
+}
+
+.name-title .profile-pic {
+    width: 100px;
+    height: 100px;
+    background-image: url(perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 4px black;
+    position: absolute;
+    right: 0px;
+    top: -5px;
+}
+
+
+.description {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.description > span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tags {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.tags > h2 {
+    color: darkslategray;
+    margin-bottom: 10px;
+}
+
+.tags > span {
+    display: inline-block;
+    margin: 5px;
+    padding: 7px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    border-radius: 5px;
+}
+
+.experience {
+    font-size: 0.9rem;
+}
+
+.experience > h2 {
+    position: relative;
+    color: darkslategray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.experience > h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(138, 138, 138);
+    left: 0px;
+    top: -5px;
+}
+
+.experience > h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(138, 138, 138);
+    left: 0px;
+    bottom: -5px;
+}
+
+
+.experience-cont {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.education {
+    font-size: 0.9rem;
+}
+
+.education > h2 {
+    position: relative;
+    color: darkslategray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.education > h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(138, 138, 138);
+    left: 0px;
+    top: -5px;
+}
+
+.education > h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(138, 138, 138);
+    left: 0px;
+    bottom: -5px;
+}
+
+.education-cont {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer {
+    width: max(60vw, 600px);
+    background-color: rgb(49, 49, 49);
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px 30px;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+@media (max-width: 770px) {
+    .profile-pic {
+        display: none;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 500px ) {
+    .separator {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    main {
+        width: 100vw;
+    }
+
+    .name-title h1 {
+        font-size: 2rem;
+    }
+}
